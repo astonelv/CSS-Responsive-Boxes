@@ -1,3 +1,36 @@
 body {
   background: peachpuff;
 }
+a {
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header, footer {
+  flex-grow: 3;
+}
+
+main {
+  flex-grow: 1;
+}
+
+@media (min-width: 800px) {
+  .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+  }
+  header {
+      width: 100%;
+  }
+  main, footer, header {
+      margin: 1em;
+  }
+}

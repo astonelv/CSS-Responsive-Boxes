@@ -1,3 +1,46 @@
 body {
   background: papayawhip;
 }
+.a {
+  border: 1px solid black;
+}
+
+.b {
+  flex-basis: 100%;
+}
+
+
+.container {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-2 {
+  flex-grow: 2;
+}
+
+.c, .d, .e {
+  flex-grow: 1;
+}
+
+.right {
+  flex-grow: 1;
+}
+
+@media (min-width: 800px) {
+  .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+  }
+  header {
+      width: 100%;
+  }
+  main, footer, header {
+      margin: 1em;
+  }
+}
